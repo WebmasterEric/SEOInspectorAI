@@ -8,7 +8,7 @@ async function runAudit() {
     return;
   }
 
-  resultsBox.innerHTML = "<p>Running SEO audit… (demo data)</p>";
+  resultsBox.innerHTML = "<p>Running SEO audit… (loading latest report)</p>";
 
   try {
     const response = await fetch("engine/sample_report.json");
@@ -34,11 +34,41 @@ async function runAudit() {
       html += `<p>No detailed checks found in the report.</p>`;
     }
 
-    html += `<p style="margin-top:14px;opacity:0.8;">
-      This is a demo report based on the latest engine run.
-      For a real human-run SEO audit and implementation,
-      work directly with Webmaster Eric using the button below.
-    </p>`;
+    // 🔴 Soft “critical issues” notice (only if things are bad)
+    const hasCritical = data.checks && data.checks.some(c =>
+      c.status === "Missing" ||
+      c.status === "Thin" ||
+      c.status === "Thin Content"
+    );
+
+    if (hasCritical) {
+      html += `
+        <div style="margin-top:20px;padding:15px;background:#1b1b2b;border-radius:8px;font-size:0.95rem;line-height:1.5;">
+          <strong>Recommendation from Webmaster Eric:</strong><br>
+          Your site has one or more <em>critical SEO issues</em> like missing essentials or thin content.
+          Pages with these problems usually struggle to rank, even if you get backlinks.<br><br>
+          If you want your SEO foundation fixed the right way, I can personally rebuild it for you.
+        </div>
+      `;
+    }
+
+    // 🟣 Pro-tip + CTA (soft sell)
+    html += `
+      <br><br>
+      <div class="pro-tip" style="opacity:0.9;margin-top:12px;font-size:0.95rem;line-height:1.5;">
+        <strong>Pro Insight from Webmaster Eric:</strong><br>
+        Automated audits are powerful for spotting issues fast — but real growth happens when a human expert
+        rewrites structure, aligns pages to search intent, and builds topical authority around your brand.
+      </div>
+
+      <div style="margin-top:18px;text-align:center;">
+        <a href="https://store.webmastereric.com/product/seo-near-me-local-search-optimization-by-webmaster-eric/"
+           target="_blank"
+           style="display:inline-block;padding:12px 18px;background:#8a2be2;color:white;border-radius:8px;text-decoration:none;font-weight:600;">
+           Work Directly With Webmaster Eric
+        </a>
+      </div>
+    `;
 
     resultsBox.innerHTML = html;
   } catch (err) {
