@@ -1,4 +1,35 @@
 {
-  "overview": "This is a placeholder report.",
-  "checks": []
+  "overview": "This page has strong content potential but several technical and on-page SEO issues that should be fixed.",
+  "checks": [
+    {
+      "name": "Title Tag",
+      "status": "Needs Improvement",
+      "recommendation": "Add your primary keyword and keep the title under 60 characters."
+    },
+    {
+      "name": "Meta Description",
+      "status": "Missing",
+      "recommendation": "Write a compelling 140–160 character description that includes your primary keyword and a clear benefit."
+    },
+    {
+      "name": "H1 Structure",
+      "status": "Good",
+      "recommendation": "You have a single, descriptive H1. Consider adding supporting H2s for better content structure."
+    },
+    {
+      "name": "Canonical Tag",
+      "status": "Missing",
+      "recommendation": "Add a canonical URL tag to prevent duplicate content issues."
+    },
+    {
+      "name": "Content Depth",
+      "status": "Thin",
+      "recommendation": "Increase the page to at least 800–1200 words of helpful, intent-matching content."
+    },
+    {
+      "name": "Image Optimization",
+      "status": "Needs Improvement",
+      "recommendation": "Compress large images, add descriptive ALT text, and use modern formats where possible."
+    }
+  ]
 }
