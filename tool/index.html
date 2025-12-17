@@ -1,42 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SEOInspectorAI™ Tool — Webmaster Eric</title>
-  <meta name="description" content="Run a fast SEO inspection (title, meta description, H1, word count, canonical). Built by Webmaster Eric." />
-  <meta name="author" content="Webmaster Eric" />
-  <link rel="stylesheet" href="./style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEOInspectorAI™ by Webmaster Eric</title>
+<link rel="stylesheet" href="style.css" />
+<meta name="description" content="SEOInspectorAI™ is a free SEO audit engine created by Webmaster Eric — Master of the Web. Enter a URL, see instant SEO insights, and upgrade your online presence.">
 </head>
+
 <body>
+<div class="container">
 
-  <div class="wrap">
-    <h1 class="logo">SEOInspectorAI™</h1>
-    <p class="tag">A Free SEO Audit Engine by <b>Webmaster Eric</b> — Master of the Web</p>
+  <h1>SEOInspectorAI™</h1>
+  <p class="subtitle">
+    A Free SEO Audit Engine by Webmaster Eric — Master of the Web
+  </p>
 
-    <div class="panel">
-      <input id="url" type="url" placeholder="Enter a website URL..." autocomplete="off" />
-      <button id="run">Run SEO Audit</button>
-    </div>
-
-    <div id="msg" class="msg">Enter a URL above and run your first SEO audit.</div>
-
-    <div id="results" class="results hidden">
-      <h2>Report</h2>
-      <pre id="report"></pre>
-    </div>
-
-    <div class="ctaBox">
-      <p class="ctaTitle">Need a real SEO upgrade?</p>
-      <a class="ctaBtn" href="https://store.webmastereric.com/" target="_blank" rel="noopener">
-        Work Directly With Webmaster Eric
-      </a>
-      <p class="foot">
-        SEOInspectorAI™ is built and maintained by <b>Webmaster Eric</b>. This free tool shows you where your SEO stands; my paid work focuses on fixing structure, content depth, and visibility so your site can compete in search.
-      </p>
-    </div>
+  <div class="input-box">
+    <input type="text" id="urlInput" placeholder="Enter a website URL…" />
+    <button onclick="runAudit()">Run SEO Audit</button>
   </div>
 
-  <script src="./script.js"></script>
+  <div id="results">
+    <p>Enter a URL above and run your first SEO audit.</p>
+  </div>
+
+  <footer>
+    <p>Need a real SEO upgrade?</p>
+    <a class="cta"
+       href="https://store.webmastereric.com/product/seo-near-me-local-search-optimization-by-webmaster-eric/"
+       target="_blank" rel="noopener">
+       Work Directly With Webmaster Eric
+    </a>
+
+    <p style="opacity:0.75;margin-top:18px;font-size:0.9rem;line-height:1.4;">
+      SEOInspectorAI™ is built and maintained by <strong>Webmaster Eric</strong>.
+      This free tool shows you where your SEO stands; my paid work focuses on fixing structure,
+      content depth, and local visibility so your site can actually compete in search.
+    </p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
