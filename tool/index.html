@@ -3,89 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SEOInspectorAI Tool — Webmaster Eric</title>
-  <meta name="description" content="Run a fast, human-readable SEO inspection report. Built by Webmaster Eric." />
+  <title>SEOInspectorAI™ Tool — Webmaster Eric</title>
+  <meta name="description" content="Run a fast SEO inspection (title, meta description, H1, word count, canonical). Built by Webmaster Eric." />
   <meta name="author" content="Webmaster Eric" />
-  <link rel="canonical" href="https://webmastereric.github.io/SEOInspectorAI/tool/" />
-  <link rel="stylesheet" href="./tool.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-  <header class="top">
-    <a class="brand" href="../">SEOInspectorAI</a>
-    <nav class="nav">
-      <a href="../pages/">Docs</a>
-      <a href="../pages/what-this-tool-checks/">What it checks</a>
-      <a class="cta" href="../">Home</a>
-    </nav>
-  </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h1>SEOInspectorAI Tool</h1>
-      <p class="sub">Paste a URL → get a clean inspection summary. Built and maintained by <strong>Webmaster Eric</strong>.</p>
-    </section>
+  <div class="wrap">
+    <h1 class="logo">SEOInspectorAI™</h1>
+    <p class="tag">A Free SEO Audit Engine by <b>Webmaster Eric</b> — Master of the Web</p>
 
-    <section class="panel">
-      <label for="url" class="label">Website URL</label>
-      <div class="row">
-        <input id="url" type="url" inputmode="url" placeholder="https://example.com" autocomplete="off" />
-        <button id="run" class="btn">Run Inspection</button>
-      </div>
-      <p class="hint">
-        Heads up: many sites block browser-based fetching (CORS). If that happens, the tool will guide you to the “Ticket Mode” workaround.
+    <div class="panel">
+      <input id="url" type="url" placeholder="Enter a website URL..." autocomplete="off" />
+      <button id="run">Run SEO Audit</button>
+    </div>
+
+    <div id="msg" class="msg">Enter a URL above and run your first SEO audit.</div>
+
+    <div id="results" class="results hidden">
+      <h2>Report</h2>
+      <pre id="report"></pre>
+    </div>
+
+    <div class="ctaBox">
+      <p class="ctaTitle">Need a real SEO upgrade?</p>
+      <a class="ctaBtn" href="https://store.webmastereric.com/" target="_blank" rel="noopener">
+        Work Directly With Webmaster Eric
+      </a>
+      <p class="foot">
+        SEOInspectorAI™ is built and maintained by <b>Webmaster Eric</b>. This free tool shows you where your SEO stands; my paid work focuses on fixing structure, content depth, and visibility so your site can compete in search.
       </p>
-    </section>
+    </div>
+  </div>
 
-    <section id="status" class="status" aria-live="polite"></section>
-
-    <section class="grid">
-      <article class="card">
-        <h2>Quick SEO Snapshot</h2>
-        <div id="snapshot" class="mono small muted">Run an inspection to see results.</div>
-      </article>
-
-      <article class="card">
-        <h2>Findings</h2>
-        <div id="findings" class="mono small muted">Waiting…</div>
-      </article>
-
-      <article class="card">
-        <h2>Recommendations</h2>
-        <div id="recs" class="mono small muted">Waiting…</div>
-      </article>
-
-      <article class="card">
-        <h2>Ticket Mode (Always Works)</h2>
-        <p class="small">
-          If a site blocks fetch (CORS), use Ticket Mode:
-        </p>
-        <ol class="small">
-          <li>Click “Generate Ticket” below</li>
-          <li>Copy the ticket text</li>
-          <li>Paste it into your WooCommerce checkout notes / form</li>
-        </ol>
-        <button id="ticket" class="btn ghost">Generate Ticket</button>
-        <pre id="ticketOut" class="mono small"></pre>
-        <p class="small muted">
-          This keeps your “tool” public, but still lets you monetize inspections through your store.
-        </p>
-      </article>
-    </section>
-
-    <section class="footerCta">
-      <h3>Want a done-for-you audit delivered fast?</h3>
-      <p class="muted">Buy an SEO inspection ticket from the store and I’ll run it with full tooling and send your report.</p>
-      <a class="btn" href="https://store.webmastereric.com/" target="_blank" rel="noopener">Go to Store</a>
-      <a class="btn ghost" href="../pages/" >Read the docs</a>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <p><strong>Author:</strong> Webmaster Eric • <strong>Project:</strong> SEOInspectorAI</p>
-    <p class="muted">Permanent pages. Public docs. Real tooling mindset.</p>
-  </footer>
-
-  <script src="./tool.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
