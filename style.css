@@ -9,6 +9,8 @@
 }
 
 *{box-sizing:border-box}
+html, body { width:100%; overflow-x:hidden; }
+
 body{
   margin:0;
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
@@ -23,27 +25,32 @@ body{
   text-align:center;
 }
 
+/* Prevent “cut off” gradients/text on small screens */
 h1{
   font-size:54px;
+  line-height:1.05;
   margin:0 0 8px;
+  padding:0 2px;
   background: linear-gradient(90deg, var(--accent2), var(--accent));
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
   font-weight:900;
+  word-break:break-word;
 }
 
 .subtitle{
   margin:0 0 26px;
   color:var(--muted);
   font-size:18px;
+  line-height:1.35;
 }
 
 .input-box{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  align-items:center;
+  align-items:stretch;
   justify-content:center;
   padding:14px;
   border-radius:16px;
@@ -52,8 +59,8 @@ h1{
 }
 
 input{
-  flex:1;
-  min-width:240px;
+  flex:1 1 280px;
+  min-width:0;              /* IMPORTANT: prevents overflow on iOS */
   padding:16px 14px;
   border-radius:12px;
   border:1px solid var(--line);
@@ -62,9 +69,13 @@ input{
   font-size:16px;
   outline:none;
 }
-input:focus{ border-color: rgba(138,43,226,.65); box-shadow:0 0 0 4px rgba(138,43,226,.18); }
+input:focus{
+  border-color: rgba(138,43,226,.65);
+  box-shadow:0 0 0 4px rgba(138,43,226,.18);
+}
 
 button{
+  flex:0 0 auto;
   padding:16px 18px;
   border-radius:12px;
   border:1px solid rgba(138,43,226,.6);
@@ -83,6 +94,10 @@ button{
   border:1px solid var(--line);
   border-radius:16px;
   color:var(--muted);
+
+  /* Mobile safety */
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .check{
@@ -97,21 +112,8 @@ button{
   margin:0 0 8px;
   color:var(--text);
   font-size:16px;
+  line-height:1.25;
 }
-
-.badge{
-  display:inline-block;
-  padding:4px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:800;
-  border:1px solid var(--line);
-  margin-left:8px;
-}
-
-.good{ background: rgba(0,255,170,.10); color:#9affda; }
-.warn{ background: rgba(255,196,0,.10); color:#ffe08a; }
-.bad{ background: rgba(255,0,90,.10); color:#ff9bbb; }
 
 footer{
   margin-top:26px;
@@ -119,6 +121,7 @@ footer{
   border-radius:16px;
   border:1px solid var(--line);
   background: rgba(16,16,25,.65);
+  text-align:center;
 }
 
 .cta{
@@ -140,4 +143,56 @@ footer{
   line-height:1.45;
   color:var(--muted);
   text-align:left;
+}
+
+/* ✅ MOBILE FIX PACK */
+@media (max-width: 520px){
+  .container{
+    padding:28px 12px 44px;
+  }
+
+  h1{
+    font-size:38px;
+    letter-spacing:-0.2px;
+  }
+
+  .subtitle{
+    font-size:15px;
+    margin-bottom:16px;
+  }
+
+  .input-box{
+    padding:12px;
+    gap:10px;
+  }
+
+  input{
+    flex:1 1 100%;
+    padding:14px 12px;
+    font-size:16px;
+  }
+
+  button{
+    width:100%;
+    padding:14px 14px;
+    font-size:16px;
+  }
+
+  #results{
+    padding:14px;
+  }
+
+  footer{
+    padding:16px;
+  }
+
+  .cta{
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* Optional: reduce motion/overflow edge cases on iOS */
+@supports (-webkit-touch-callout: none) {
+  body { -webkit-text-size-adjust: 100%; }
 }
