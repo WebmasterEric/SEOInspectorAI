@@ -1,0 +1,94 @@
+:root{
+  --bg:#07070c;
+  --panel:#101019;
+  --text:#f5f5ff;
+  --muted:#b8b8d2;
+  --accent:#8a2be2;
+  --accent2:#5f2cff;
+  --line:rgba(255,255,255,.10);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;overflow-x:hidden}
+body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background: radial-gradient(900px 500px at 50% 0%, rgba(138,43,226,.28), transparent 55%), var(--bg);
+  color:var(--text);
+}
+
+.wrap{max-width:980px;margin:0 auto;padding:28px 14px 50px}
+.kicker{color:var(--muted);font-weight:800;letter-spacing:.4px;text-transform:uppercase;font-size:12px}
+
+h1{
+  margin:6px 0 8px;
+  font-size:44px;
+  line-height:1.05;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-weight:900;
+}
+
+.sub{margin:0;color:var(--muted);line-height:1.45;max-width:720px}
+
+.top{
+  display:flex;
+  gap:18px;
+  justify-content:space-between;
+  align-items:flex-end;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background: rgba(16,16,25,.65);
+}
+
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.btn{
+  display:inline-block;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  text-decoration:none;
+  color:var(--text);
+  background: rgba(0,0,0,.25);
+  font-weight:800;
+}
+.btn.primary{
+  border:1px solid rgba(138,43,226,.6);
+  background: linear-gradient(90deg, rgba(95,44,255,.55), rgba(138,43,226,.55));
+}
+
+.grid{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  gap:12px;
+}
+
+.card{
+  grid-column:span 6;
+  padding:16px;
+  border-radius:18px;
+  border:1px solid var(--line);
+  background: rgba(16,16,25,.55);
+}
+
+.card h2{margin:0 0 10px;font-size:16px}
+.card p, .card li{color:var(--muted);line-height:1.55}
+.small{font-size:13px}
+.muted{color:var(--muted)}
+
+.actionsRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+
+.foot{
+  margin-top:16px;
+  padding:16px;
+  border-radius:18px;
+  border:1px solid var(--line);
+  background: rgba(16,16,25,.55);
+}
+@media (max-width:720px){
+  .top{flex-direction:column;align-items:flex-start}
+  h1{font-size:36px}
+  .card{grid-column:span 12}
+  .btn{width:100%;text-align:center}
+}
