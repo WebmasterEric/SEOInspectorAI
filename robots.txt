@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webmastereric.github.io/SEOInspectorAI/sitemap.xml
