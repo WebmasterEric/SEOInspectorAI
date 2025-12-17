@@ -1,25 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://webmastereric.github.io/SEOInspectorAI/</loc>
-    <lastmod>2025-12-16</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/seo-audit-checklist/</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
   <url>
     <loc>https://webmastereric.github.io/SEOInspectorAI/pages/local-seo-mistakes/</loc>
-    <lastmod>2025-12-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/seo-audit-checklist/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-solo-operators/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-small-businesses/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-local-businesses/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-service-businesses/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-ecommerce-stores/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-creators/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-agencies/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-consultants/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-coaches/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-wordpress/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-woocommerce/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-shopify/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-github-pages/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmastereric.github.io/SEOInspectorAI/pages/technical-seo-checklist-medical-clinics/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
